@@ -1,50 +1,42 @@
 # 🎬 Amazon Prime Video: Global Catalog Strategic Analytics
-**End-to-End Data Engineering Project | Medallion Architecture Design**
+**End-to-End Analytics Solution | Power BI & Data Engineering**
 
 ## 📌 Project Overview
-This project focuses on building a strategic data solution for Amazon Prime Video's global catalog. By integrating title metadata and talent credits, the goal is to transform raw streaming data into a "North Star" for content decision-makers, moving from intuitive selections to evidence-based investments.
-
-> **Note:** While this README is in English, the full project documentation is written in **Portuguese**.
+This project transforms Amazon Prime Video's global metadata into a strategic decision-making tool. Using **Power BI** for visual intelligence and a **Data Lakehouse** approach for data reliability, the goal is to evaluate "Content Health" by balancing IMDb quality with catalog volume.
 
 ---
 
-## 🏗️ Data Lakehouse Architecture
-The technical foundation follows the **Medallion Architecture**, ensuring data reliability and a clear lineage from raw ingestion to business insights:
+## 🏗️ Technical Architecture (Lakehouse)
+To feed the Power BI Semantic Model with high-quality data, I designed a **Medallion Architecture**:
 
-1.  **Bronze Layer (Raw):** Preservation of original titles and credits datasets.
-2.  **Silver Layer (Cleansed):** Data quality enforcement, handling missing values, and resolving homonyms (as identified in the initial data audit).
-3.  **Gold Layer (Curated):** Business-level aggregates optimized for the Power BI Semantic Model.
+* **Bronze:** Raw ingestion of titles and credits.
+* **Silver:** Data cleaning and resolving homonyms (addressing the person_id vs. name delta).
+* **Gold (Power BI Ready):** Curated tables optimized for dashboard performance.
 
 ---
 
-## 💡 Strategic Planning (Phase 1 Complete)
-I have successfully defined the business framework, focusing on five core analytical pillars:
+## 💡 Business Intelligence & KPIs
+I have defined the strategic pillars and **5 Core Analytical Questions** that the Power BI dashboard will address:
 
-### 1. Analytical Questions (The 5 Core Pillars)
-The project is designed to answer five fundamental business questions:
-* **Market Composition:** What is the ratio between Movies and TV Shows across different production hubs?
-* **Critical Success vs. Volume:** How does critical acclaim (IMDb scores) correlate with production volume by country?
-* **Historical Trends:** Which years or decades represent the highest value in the current catalog?
-* **Talent Connectivity:** How do specific directors and actors influence the overall "Quality Score" of a genre?
-* **Content Duration Patterns:** Are there significant runtime differences between top-rated and low-rated content?
+### 🎯 Key Performance Indicators (KPIs)
+* **Content Health Index:** Distribution of quality vs. volume.
+* **Global Production Reach:** Mapping production hubs worldwide.
+* **Talent Impact Factor:** Measuring the weight of directors/actors on catalog value.
 
-### 2. Key Performance Indicators (KPIs)
-Based on the analytical questions, the following KPIs were established:
-* **Content Health Index:** Distribution of quality scores across the catalog.
-* **Global Diversity Ratio:** Tracking the geographic origin of content.
-* **Talent Impact Factor:** Measuring the weight of specific cast/crew on catalog prestige.
-* **Release Velocity:** Monitoring the pace of content additions over time.
+### 🔍 Analytical Questions
+1.  What is the ratio between Movies and TV Shows across production hubs?
+2.  How does critical acclaim correlate with production volume per country?
+3.  Which decades represent the highest value in the current catalog?
+4.  How do specific talents influence the "Quality Score" of their genres?
+5.  What are the runtime patterns for top-rated vs. low-rated content?
 
 ---
 
 ## 📂 Repository Contents
-* **[Amazon_Prime_Strategic_Report.pdf](./EDSTD_template.pdf):** Full technical report covering Business Scope, the 5 Analytical Questions, and KPI Definitions.
+* **[Amazon_Prime_Strategic_Report.pdf](./report.pdf):** Full project documentation (Business Scope, KPIs, and Architecture).
 * **/data:** Source datasets (Titles & Credits).
 
-## 🚀 Current Roadmap
-- [x] Business Context & Strategic Scope definition.
-- [x] Definition of the **5 Core Analytical Questions**.
-- [x] **KPI Mapping** and Metric calculation logic.
-- [x] Data Lakehouse Architecture design.
-- [ ] **Next Step:** Detailed Data Profiling & Quality Audit.
-- [ ] Implementation of ETL Pipelines (Bronze to Silver).
+## 🚀 Roadmap
+- [x] Business Scope & KPI Definition.
+- [x] Analytical Questions Mapping.
+- [ ] **Next Step:** Data Profiling & Power BI Model Development.
