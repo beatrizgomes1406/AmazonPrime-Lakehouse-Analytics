@@ -24,11 +24,11 @@ I have defined the strategic pillars and **5 Core Analytical Questions** that th
 * **Talent Impact Factor:** Measuring the weight of directors/actors on catalog value.
 
 ### 🔍 Analytical Questions
-1.  What is the ratio between Movies and TV Shows across production hubs?
-2.  How does critical acclaim correlate with production volume per country?
-3.  Which decades represent the highest value in the current catalog?
-4.  How do specific talents influence the "Quality Score" of their genres?
-5.  What are the runtime patterns for top-rated vs. low-rated content?
+1.  How has the distribution of genres evolved over the last decade in terms of production volume, and which genres are showing signs of "Content Rot" (High volume but declining IMDb scores)?
+2.  Who are the top 10 most frequent actors in the catalog, and does their presence guarantee higher audience ratings and engagement?
+3.  What is the relationship between content length (Runtime) and user satisfaction? Is there an "ideal duration" that maximizes scores for Movies vs. Shows?
+4.  Is there a strong correlation between marketing success (Popularity) and user satisfaction (Score), or is the platform relying on "overhyped" low-quality content?
+5.  Which international production hubs are delivering the highest "Quality-per-Title" ratio, and where are the geographical gaps for content expansion?
 
 ---
 
